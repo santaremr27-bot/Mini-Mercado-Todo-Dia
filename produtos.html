@@ -2,11 +2,21 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>Produtos - Minimercado Todo Dia</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Produtos - Mini Mercado Todo Dia</title>
+  <style>
+    body { font-family: Arial; background:#f2f2f2; margin:0 }
+    header, footer { background:#2e8b57; color:#fff; text-align:center; padding:12px }
+    nav a { color:#fff; text-decoration:none; margin:0 10px }
+    nav a:hover { text-decoration:underline }
+    main { max-width:900px; margin:20px auto; padding:0 12px }
+    h2 { margin-top:22px }
+    .lista { display:grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap:12px }
+    .item { background:#fff; border:1px solid #ddd; padding:10px; text-align:center; border-radius:6px }
+    .item img { width:100%; height:150px; object-fit:contain }
+    .preco { font-weight:bold; color:#333; margin-top:6px }
+  </style>
 </head>
 <body>
-  <!-- Cabeçalho -->
   <header>
     <h1>Produtos</h1>
     <nav>
@@ -17,45 +27,53 @@
     </nav>
   </header>
 
-  <!-- Conteúdo principal -->
   <main>
-    <!-- Categoria 1 -->
     <h2>Frutas e Verduras</h2>
-    <div>
-      <img src="imagens/maca.png" alt="Maçã">
-      <p>Maçã - R$ 5,00/kg</p>
-    </div>
-    <div>
-      <img src="imagens/tomate.png" alt="Tomate">
-      <p>Tomate - R$ 6,00/kg</p>
+    <div class="lista">
+      <div class="item">
+        <img src="imagens/maca.png" alt="Maçã">
+        <div>Maçã</div>
+        <div class="preco">R$ 5,00/kg</div>
+      </div>
+      <div class="item">
+        <img src="imagens/tomate.png" alt="Tomate">
+        <div>Tomate</div>
+        <div class="preco">R$ 6,00/kg</div>
+      </div>
     </div>
 
-    <!-- Categoria 2 -->
     <h2>Produtos Alimentícios Não Perecíveis</h2>
-    <div>
-      <img src="imagens/arroz.png" alt="Arroz">
-      <p>Arroz - R$ 25,00 (5kg)</p>
-    </div>
-    <div>
-      <img src="imagens/feijao.png" alt="Feijão">
-      <p>Feijão - R$ 10,00 (1kg)</p>
+    <div class="lista">
+      <div class="item">
+        <img src="imagens/arroz.png" alt="Arroz 5kg">
+        <div>Arroz (5kg)</div>
+        <div class="preco">R$ 25,00</div>
+      </div>
+      <div class="item">
+        <img src="imagens/feijao.png" alt="Feijão 1kg">
+        <div>Feijão (1kg)</div>
+        <div class="preco">R$ 10,00</div>
+      </div>
     </div>
 
-    <!-- Categoria 3 -->
-    <h2>Produtos de Higiene e Limpeza</h2>
-    <div>
-      <img src="imagens/sabonete.png" alt="Sabonete">
-      <p>Sabonete - R$ 2,50 (unidade)</p>
-    </div>
-    <div>
-      <img src="imagens/detergente.png" alt="Detergente">
-      <p>Detergente - R$ 3,00 (unidade)</p>
+    <h2>Higiene e Limpeza</h2>
+    <div class="lista">
+      <div class="item">
+        <img src="imagens/sabonete.png" alt="Sabonete">
+        <div>Sabonete</div>
+        <div class="preco">R$ 2,50/un</div>
+      </div>
+      <div class="item">
+        <img src="imagens/detergente.png" alt="Detergente">
+        <div>Detergente</div>
+        <div class="preco">R$ 3,00/un</div>
+      </div>
     </div>
   </main>
 
-  <!-- Rodapé -->
   <footer>
-    <p>&copy; 2025 Minimercado do Bairro | Todos os direitos reservados</p>
+    <p>© 2025 Minimercado do Bairro</p>
   </footer>
 </body>
 </html>
+
