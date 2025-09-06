@@ -30,3 +30,49 @@
   </header>
 
   <main class="container py-4 text-center">
+    <h2 class="h4">Bem-vindo!</h2>
+    <p>Aqui você encontra produtos frescos, de qualidade e preços acessíveis.</p>
+
+    <!-- Carrossel -->
+    <div id="carouselProdutos" class="carousel slide mt-4" data-bs-ride="carousel" aria-label="Destaques de categorias">
+      <div class="carousel-inner rounded shadow bg-white p-3">
+        <div class="carousel-item active">
+          <img src="imagens/maca.png" class="d-block mx-auto" style="height:260px"
+               alt="Maçã vermelha, categoria frutas e verduras">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Frutas & Verduras</h5>
+            <p>Fresquinhas todos os dias.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="imagens/arroz.png" class="d-block mx-auto" style="height:260px"
+               alt="Pacote de arroz, categoria não perecíveis">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Não Perecíveis</h5>
+            <p>Arroz, feijão e muito mais.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="imagens/detergente.png" class="d-block mx-auto" style="height:260px"
+               alt="Detergente neutro, categoria higiene e limpeza">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Higiene & Limpeza</h5>
+            <p>Praticidade no dia a dia.</p>
+          </div>
+        </div>
+      </div>
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselProdutos" data-bs-slide="prev" aria-label="Anterior">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselProdutos" data-bs-slide="next" aria-label="Próximo">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      </button>
+    </div>
+  </main>
+
+  <footer>
+    <p class="mb-0">© 2025 Minimercado do Bairro</p>
+  </footer>
+</body>
+</html>
